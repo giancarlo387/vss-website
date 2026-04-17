@@ -33,7 +33,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 pt-16">
+    <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 pt-16 overflow-hidden w-full max-w-[100vw]">
       {/* Left — text */}
       <div className="flex flex-col justify-center px-6 lg:px-16 xl:px-24 py-20 bg-bg">
         <motion.span
@@ -110,7 +110,7 @@ export default function HeroSection() {
       </div>
 
       {/* Right — dark panel with images */}
-      <div className="relative bg-dark2 overflow-hidden min-h-[480px] lg:min-h-0">
+      <div className="relative bg-dark2 overflow-hidden min-h-[480px] lg:min-h-0 w-full">
         {/* Background image */}
         <Image
           src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&q=80"
