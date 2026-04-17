@@ -7,6 +7,19 @@ import RevealWrapper from "@/components/RevealWrapper";
 import CtaBand from "@/components/CtaBand";
 import { values, teamMembers } from "@/lib/data";
 
+const iconPaths: Record<string, React.ReactNode> = {
+  target: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth={2}/><circle cx="12" cy="12" r="6" strokeWidth={2}/><circle cx="12" cy="12" r="2" strokeWidth={2}/></svg>,
+  handshake: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" /></svg>,
+  bolt: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>,
+  chart: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+  lock: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>,
+  globe: <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" /></svg>,
+};
+
+function ValueIcon({ name }: { name: string }) {
+  return <>{iconPaths[name] ?? null}</>;
+}
+
 export default function AboutPage() {
   return (
     <>
@@ -113,7 +126,9 @@ export default function AboutPage() {
                   whileHover={{ y: -4 }}
                   transition={{ duration: 0.25 }}
                 >
-                  <span className="text-3xl mb-4 block">{value.icon}</span>
+                  <div className="w-11 h-11 rounded-xl bg-accent-light flex items-center justify-center mb-4">
+                    <ValueIcon name={value.icon} />
+                  </div>
                   <h3
                     className="text-lg font-bold text-dark mb-2"
                     style={{ fontFamily: "var(--font-display)" }}

@@ -35,7 +35,7 @@ const floatingCards = [
     width: 170, height: 120,
   },
   {
-    image: "https://images.unsplash.com/photo-1553484771-047a44eee27b?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
     label: "Remote Work",
     delay: 1.8,
     top: "44%", right: "6%",

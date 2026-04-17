@@ -188,52 +188,52 @@ export const pricingPlans = [
 
 export const teamMembers = [
   {
-    name: "Maria Santos",
+    name: "Vanessa Clo Zaisa E. Aricayos",
     role: "Chief Executive Officer",
-    bio: "10+ years in executive virtual assistance. Maria built VSS from the ground up to provide Philippine-quality remote talent to global businesses.",
+    bio: "Founder and driving force behind VSS. Vanessa built the company from the ground up to provide Philippine-quality remote talent to global businesses.",
     image: "/team-ceo.jfif",
   },
   {
-    name: "Carlo Mendoza",
+    name: "Ric A. Aricayos",
     role: "Chief Marketing Officer",
-    bio: "Strategic marketing leader with a deep background in brand growth and client acquisition. Carlo drives VSS's presence across global markets.",
+    bio: "Strategic marketing leader with a deep background in brand growth and client acquisition. Ric drives VSS's presence across global markets.",
     image: "/team-cmo.jfif",
   },
 ];
 
 export const values = [
   {
-    icon: "🎯",
+    icon: "target",
     title: "Accuracy First",
     description:
       "Every task is completed with precision. We double-check our work so you never have to.",
   },
   {
-    icon: "🤝",
+    icon: "handshake",
     title: "True Partnership",
     description:
       "We're not just a vendor — we're an extension of your team, invested in your success.",
   },
   {
-    icon: "⚡",
+    icon: "bolt",
     title: "Speed & Reliability",
     description:
       "Deadlines are non-negotiable. Count on us to deliver on time, every time.",
   },
   {
-    icon: "📈",
+    icon: "chart",
     title: "Growth-Focused",
     description:
       "Everything we do is designed to help your business scale faster and smarter.",
   },
   {
-    icon: "🔒",
+    icon: "lock",
     title: "Confidentiality",
     description:
       "Your data is safe with us. NDAs available and strict privacy policies observed.",
   },
   {
-    icon: "🌏",
+    icon: "globe",
     title: "Global Mindset",
     description:
       "Based in the Philippines, serving clients worldwide — across time zones and industries.",
